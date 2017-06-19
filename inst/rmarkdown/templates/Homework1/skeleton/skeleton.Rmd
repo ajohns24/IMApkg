@@ -1,0 +1,191 @@
+---
+title: "Homework 1: Visualizing & Modeling Variability"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+**Load some handy packages:**
+
+```{r, warning=FALSE}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+
+<br>
+<br>
+
+
+
+# Births
+
+
+```{r}
+#load the fivethirtyeight library
+suppressPackageStartupMessages(library(fivethirtyeight))
+
+#load the births data
+data(US_births_2000_2014)
+```
+
+
+<br>
+<br>
+
+## Exercise 1
+
+
+
+
+
+
+<br>
+<br>
+
+## Exercise 2
+
+
+
+
+
+
+<br>
+<br>
+
+## Exercise 3
+
+
+
+
+<br>
+<br>
+
+## Exercise 4
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+# Interaction
+
+
+```{r}
+campaigns = read.csv("https://www.macalester.edu/~ajohns24/data/CampaignSpending.csv")
+```
+
+<br>
+<br>
+
+## Exercise 5
+
+
+<br>
+<br>
+
+## Exercise 6
+
+
+
+
+<br>
+<br>
+
+## Exercise 7
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+# Covariates
+
+
+```{r}
+#Load the data:
+
+```
+
+
+<br>
+<br>
+
+## Exercise 8
+
+
+
+
+<br>
+<br>
+
+## Exercise 9
+
+
+
+
+
+<br>
+<br>
+
+## Exercise 10
+
+
+
+<br>
+<br>
+
+## Exercise 11
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+# Least Squares Estimation
+
+
+
+
+```{r}
+#Load the data:
+
+
+```
+
+
+<br>
+<br>
+
+## Exercise 12
+
+
+
+
+<br>
+<br>
+
+## Exercise 13
