@@ -1,0 +1,294 @@
+---
+title: "IMA Day 2 Notes"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+
+
+## Getting Started
+
+**Load packages required for exercises:**
+
+```{r}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(mosaic))
+```
+
+
+
+
+<br>
+<br>
+
+
+
+## Regression Assumptions & Residual Analysis 
+
+### Exercise 1
+
+
+
+
+<br>
+<br>
+
+### Exercise 2
+
+
+```{r}
+suppressPackageStartupMessages(library(mosaic))
+data(Galton)
+ggplot(Galton, aes(y=height, x=father)) + 
+    geom_point() + 
+    geom_smooth(method="lm")
+GaltonMod <- lm(height ~ father, data=Galton)
+summary(GaltonMod)
+```
+
+
+
+```{r}
+#combine the raw responses, model predictions, and model residuals
+
+#a plot of residuals versus the predictions    
+
+#a Q-Q plot of the residuals
+
+```
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+## Measuring model quality: $R^2$
+
+<br>
+
+
+```{r}
+fulldata <- read.csv("https://www.macalester.edu/~ajohns24/data/IMAdata1.csv")
+
+# add a variable
+
+#set the random number seed
+
+#load the dplyr package for the sample_n function
+
+#take a sample
+
+```
+
+
+
+<br>
+
+### Exercise 3
+
+
+`mod1`:
+
+```{r}
+#fit the model
+
+
+#store the results
+
+
+#check out the head
+
+
+#variance calculations
+
+```
+   
+
+<br>
+<br>
+
+`mod2`:
+
+```{r}
+
+``` 
+
+
+
+<br>
+<br>
+
+`mod3`:
+
+```{r}
+
+
+``` 
+
+    
+
+<br>
+<br>
+
+### Exercise 4
+
+Model   Predictor       Var(response)   Var(predictions)    Var(residuals)  $R^2$
+------- --------------- --------------- ------------------- --------------- -----------
+`mod1`  `perrep_2012`
+`mod2`  `median_rent`
+`mod3`  `beforeL`
+    
+
+
+
+
+<br>
+<br>
+
+### Exercise 5
+
+
+    
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+## Measuring model quality: cross validation
+
+### Exercise 6
+
+```{r}
+#take a sample of size 1 (try this a few times)
+
+```
+
+```{r}
+#set the seed
+
+#take a sample of size 1 (try this a few times)
+
+```
+
+
+
+
+<br>
+<br>
+
+### Exercise 7
+
+```{r}
+#IMPORTANT: set the random number seed
+
+#sample 50 of the 100 cases for the training set
+
+
+#take the the other 50 for testing
+
+
+#check out the dimensions
+
+
+```
+
+```{r}
+#fit the model
+
+#calculate MSE
+
+
+#set up prediction function
+
+
+#make predictions
+
+
+#calculate residuals
+
+
+#calculate MSE
+
+
+#plot
+
+
+```
+
+
+
+
+
+<br>
+<br
+
+### Exercise 8 
+
+
+
+<br>
+<br>
+
+
+### Exercise 9
+
+```{r}
+
+```
+
+
+
+
+<br>
+<br>
+
+
+### Exercise 10
+
+
+```{r}
+#initialize the loop: set up a storage location for the 10 squared elements
+
+#loop through all steps btwn brackets 10 times
+
+#check out the results
+
+```
+
+
+
+<br>
+<br>
+
+
+### Exercise 11
+
+
+```{r}
+#initialize the loop: set up a storage location for the 10 squared elements
+
+#loop through all steps btwn brackets 10 times
+
+#check out the results
+
+```
+
+
+<br>
+<br>
+<br>
+<br>
+
+

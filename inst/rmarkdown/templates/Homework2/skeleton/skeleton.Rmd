@@ -1,0 +1,195 @@
+---
+title: "Homework 2: Measuring Model Quality"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+**Load some handy packages:**
+
+```{r, warning=FALSE}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+
+<br>
+<br>
+
+
+
+# Review + Residual Analysis
+
+
+```{r}
+#load the fivethirtyeight library
+suppressPackageStartupMessages(library(fivethirtyeight))
+
+#load data
+data(hate_crimes)
+```
+
+
+<br>
+<br>
+
+## Exercise 1
+
+
+
+
+
+
+<br>
+<br>
+
+## Exercise 2
+
+
+
+
+
+
+<br>
+<br>
+
+## Exercise 3
+
+
+
+
+<br>
+<br>
+
+## Exercise 4
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+# $R^2$
+
+<br>
+<br>
+
+## Exercise 5
+
+model   structure                                           $R^2$
+------- --------------------------------------------------- ----------
+1       `changeHate ~ share_non_white`
+2       `changeHate ~ median_house_inc`
+3       `changeHate ~ share_non_white + median_house_inc`
+4       `changeHate ~ share_vote_trump`
+5       `changeHate ~ trump50`
+6       `changeHate ~ share_vote_trump + trump50`
+
+<br>
+<br>
+
+
+
+## Exercise 6
+
+
+
+
+<br>
+<br>
+
+## Exercise 7
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+# Cross Validation
+
+
+```{r}
+#Load the data:
+
+```
+
+
+<br>
+<br>
+
+## Exercise 8
+
+
+
+
+<br>
+<br>
+
+## Exercise 9
+
+
+
+
+
+<br>
+<br>
+
+## Exercise 10
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+# Overfitting
+
+
+<br>
+
+## Exercise 11
+
+
+
+<br>
+<br>
+
+## Exercise 12
+
+
+
+
+<br>
+<br>
+
+## Exercise 13
+
+Model               $R^2$           CV error
+------------------- --------------- -----------------
+1st order poly
+3rd order poly
+19th order poly
+
