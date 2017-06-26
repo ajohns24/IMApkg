@@ -1,0 +1,152 @@
+---
+title: "Homework 3: Confidence Intervals"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+**Load some handy packages:**
+
+```{r, warning=FALSE}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+
+<br>
+<br>
+
+## Constructing Confidence Intervals
+
+
+```{r}
+sleep = read.csv("https://www.macalester.edu/~ajohns24/Data/SleepStudy2.csv")
+head(sleep, 2)
+```
+
+
+<br>
+<br>
+
+### Exercise 1
+
+
+
+
+<br>
+<br>
+
+### Exercise 2
+
+    
+    
+<br>
+<br>
+
+### Exercise 3
+
+
+
+
+<br>
+<br>
+
+## Interpreting Confidence Level
+ 
+
+```{r}
+#attach the library
+suppressPackageStartupMessages(library(gapminder))
+
+#load the data
+data(gapminder)
+
+#examine the codebook
+?gapminder
+```
+
+
+<br>
+
+### Exercise 4
+
+
+<br>
+
+### Exercise 5
+
+
+<br>
+<br>
+
+### Exercise 6
+
+
+
+<br>
+<br>
+
+### Exercise 7
+
+
+
+<br>
+<br>
+
+### Exercise 8
+
+ 
+
+<br>
+<br>
+
+### Exercise 9
+
+
+<br>
+<br>
+
+
+
+## Confidence & Prediction Intervals for Regression Models
+
+
+
+### Exercise 10
+
+
+<br>
+<br>
+
+### Exercise 11
+
+
+
+
+
+<br>
+<br>
+
+### Exercise 12
+
+
+<br>
+<br>
+
+
+## More Practice with Models and Confidence Intervals
+
+
+### Exercise 13
+
+
+
+
+### Exercise 14
+
+
+
+
