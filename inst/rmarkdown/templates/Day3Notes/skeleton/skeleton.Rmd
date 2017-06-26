@@ -1,0 +1,312 @@
+---
+title: "IMA Day 3 Notes"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+
+
+## Getting Started
+
+**Load packages required for exercises:**
+
+```{r}
+suppressPackageStartupMessages(library(rvest))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(tidyr))
+```
+
+
+## Scraping & Wrangling Data {-}
+
+**Scrape data from [Wiki](https://en.wikipedia.org/wiki/Current_members_of_the_United_States_House_of_Representatives)**
+
+```{r}
+#load the rvest library (if it's not already, install it first!)
+suppressPackageStartupMessages(library(rvest))
+
+#copy the Wiki url
+url <- "https://en.wikipedia.org/wiki/Current_members_of_the_United_States_House_of_Representatives"
+
+#scrape ALL tables from the url
+
+#the 7th table corresponds to "Voting members by state".  store this as "houseDirty"
+
+
+#check out the head of houseDirty
+
+```
+
+
+<br>
+<br>
+
+### Exercise 1
+
+```{r}
+#part a
+mytext <- "This is my text"
+
+
+#part b
+mynumber <- "2017"
+
+```
+
+<br>
+<br>
+
+### Exercise 2
+
+```{r}
+#load the dplyr library for some wrangling functions
+suppressPackageStartupMessages(library(dplyr))
+
+#take out the third column (the blank "Party" variable)
+
+#remove the spaces from the variable names
+
+#check the class of the Assumedoffice variable 
+
+#in 1 set of code: 
+#remove the "*" from the Assumedoffice measurements
+#convert Assumedoffice to numeric
+#define an "Age" variable
+
+#confirm that your house is consistent with the results in the notes
+
+```
+
+<br>
+<br>
+
+## Sampling Variability
+
+
+### Exercise 3
+
+```{r}
+#choose your own random number seed
+
+#take a sample of 16 members
+
+
+#check the properties
+
+```
+
+
+part b:
+```{r}
+
+
+```    
+
+part c:
+```{r}
+
+```
+
+
+
+
+<br>
+<br>
+
+### Exercise 4
+
+```{r}
+#take another sample
+
+```
+
+
+
+
+<br>
+<br>
+
+
+## Sampling Distributions
+
+
+
+<br>
+
+Sample Size   Shape         Min $\overline{y}$  Mean $\overline{y}$   Max $\overline{y}$  St Dev of $\overline{y}$ 
+------------- ------------- ------------------- --------------------- ------------------- --------------------------
+$n = 16$
+$n = 64$
+$n = 100$
+
+
+
+<br>
+<br>
+
+### Exercise 5
+
+```{r}
+#set the seed
+set.seed(2)
+
+#initialize the for loop
+simulation <- data.frame(n16=rep(0,1000), n64=rep(0,1000), n100=rep(0,1000))
+
+#run the for loop
+
+```   
+
+
+<br>
+<br>
+
+### Exercise 6
+
+```{r}
+
+```
+
+
+    
+
+
+<br>
+<br>
+
+### Exercise 7
+
+```{r}
+
+```
+
+
+<br>
+<br>
+
+### Exercise 8
+
+```{r}
+
+```
+
+
+<br>
+<br>
+
+### Exercise 9
+
+```{r}
+#follow directions
+
+```
+
+
+<br>
+<br>
+
+### Exercise 10
+
+```{r}
+#density plot by group
+
+```
+
+
+<br>
+<br>
+
+### Exercise 11
+
+
+
+
+
+<br>
+<br>
+
+
+## Regression Models
+
+### Exercise 12
+
+part a:
+```{r}
+#set the seed
+
+#initialize the for loop
+
+
+#run the for loop
+
+```
+    
+part b:
+
+```{r}
+#construct a histogram of the 1000 beta0 estimates
+
+#construct a histogram of the 1000 beta1 estimates
+
+```
+
+part c:
+```{r}
+#approximate the standard errors
+
+```
+
+
+<br>
+<br>
+
+### Exercise 13
+
+part a:
+```{r}
+
+```
+
+part b:
+```{r}
+
+```
+
+
+    
+    
+
+    
+    
+
+<br>
+<br>
+
+
+## The Central Limit Theorem
+
+### Exercise 14
+
+
+
+<br>
+<br>
+
+
+## Extra: Writing Functions
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
