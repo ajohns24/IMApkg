@@ -1,0 +1,91 @@
+---
+title: "Homework 4: Hypothesis Testing"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+**Load some handy packages:**
+
+```{r, warning=FALSE}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+
+<br>
+<br>
+
+
+
+### Exercise 1
+
+```{r}
+diam <- read.csv("https://www.macalester.edu/~ajohns24/data/Diamonds.csv")
+```
+
+
+<br>
+<br>
+
+### Exercise 2
+
+
+<br>
+<br>
+
+### Exercise 3
+
+
+```{r}
+foods <- read.csv("https://www.macalester.edu/~ajohns24/Data/BabyBoyFood.csv")
+head(foods)
+```
+
+
+<br>
+<br>
+
+### Exercise 4
+
+
+
+
+<br>
+<br>
+
+### Exercise 5
+
+<br>
+<br>
+
+
+### Exercise 6
+
+
+<br>
+<br>
+
+
+### Exercise 7
+
+
+
+<br>
+<br>
+
+### Exercise 8
+
+
+<br>
+<br>
+
+### Exercise 9
+
+<br>
+<br>
+
+### Exercise 10
