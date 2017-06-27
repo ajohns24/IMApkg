@@ -1,0 +1,189 @@
+---
+title: "IMA Day 4 Notes"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+
+
+## Getting Started
+
+**Load packages required for exercises:**
+
+```{r}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+
+## Motivating Example
+
+### Exercise 1
+
+```{r}
+#Step 1: set up a 2 card deck
+
+
+#Step 2: Randomly pick a card from the deck 17 times
+
+
+#Step 3: Check out the results
+
+```
+
+<br>
+<br>
+
+### Exercise 2
+
+part a:
+
+```{r eval=FALSE}
+#set the seed
+
+#initialize the for loop
+
+#run the for loop
+
+#check out the first 6 experiment results
+
+```
+
+part b:
+
+```{r}
+
+```
+
+part c:
+
+<br>
+<br>
+
+
+### Exercise 3
+
+
+
+        
+<br>
+<br>
+
+### Exercise 4
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+## Hypothesis Testing for Model Coefficients
+
+```{r}
+ps <- read.csv("https://www.macalester.edu/~ajohns24/data/PetStress.csv")
+head(ps, 3)
+```
+
+### Exercise 5
+
+
+
+
+
+<br>
+<br>
+
+### Exercise 6
+
+
+part a:
+```{r}
+#plot
+
+#model
+
+```    
+        
+
+<br>
+<br>
+
+### Exercise 7
+
+  
+
+<br>
+<br>
+
+
+### Exercise 8
+
+    
+
+<br>
+<br>
+
+
+### Exercise 9
+
+
+
+<br>
+<br>
+
+### Exercise 10
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+## Potential Errors in Hypothesis Testing
+
+### Exercise 11
+
+```{r}
+dd <- c(0.01, 0.03, 0.59, 0.02, 0.55, 0.09, 1.36, 0.61, 0.18, 0.06)
+mean(dd)
+```
+    
+
+<br>
+<br>
+
+### Exercise 12
+
+
+
+<br>
+<br>
+
+### Exercise 13
+
+
+
+<br>
+<br>
+
+### Exercise 14
+
+
+
+<br>
+<br>
+
+### Exercise 15
+
+
+
