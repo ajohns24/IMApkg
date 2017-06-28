@@ -1,0 +1,127 @@
+---
+title: "IMA Day 5 Notes"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+
+
+## Getting Started
+
+**Load packages required for exercises:**
+
+```{r}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+```
+
+
+```{r}
+oring <- read.csv("https://www.macalester.edu/~ajohns24/data/NASA.csv")
+head(oring, 3)
+```
+
+
+
+
+```{r}
+oringMod1 <- lm(Broken ~ Temp, oring)
+summary(oringMod1)
+ggplot(oring, aes(x=Temp, y=Broken)) + 
+  geom_point() + 
+  geom_smooth(method="lm", se=FALSE)
+```
+
+
+<br>
+<br>
+
+
+
+## Logistic Regression
+
+### Exercise 1
+
+```{r}
+
+```
+
+
+<br>
+<br>
+
+### Exercise 2
+
+```{r}
+
+```
+    
+
+<br>
+<br>
+
+
+### Exercise 3
+
+
+ 
+<br>
+<br>
+
+### Exercise 4
+
+```{r}
+
+```    
+
+
+
+ 
+<br>
+<br>
+
+
+## Details
+
+
+```{r}
+suppressPackageStartupMessages(library(fivethirtyeight))
+data(bechdel)
+head(bechdel, 3)
+```
+
+
+<br>
+<br>
+
+### Exercise 5
+```{r}
+
+```
+    
+
+
+<br>
+<br>
+
+### Exercise 6
+
+```{r}
+median(bechdel$budget_2013)
+bechdel <- bechdel %>% 
+    mutate(bigbudget=(budget_2013>36995786))
+```
+
+
+
+
+<br>
+<br>
+
+
+
+
