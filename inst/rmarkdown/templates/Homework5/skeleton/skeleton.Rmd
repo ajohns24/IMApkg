@@ -1,0 +1,66 @@
+---
+title: "Homework 5: Classification with Logistic Regression"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+
+**Load packages:**
+
+```{r}
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(ggplot2))
+suppressPackageStartupMessages(library(mosaic))
+```
+
+**Load data**
+
+```{r}
+diag <- read.csv("https://www.macalester.edu/~ajohns24/data/breastcancer2.csv")
+head(diag)
+```
+
+
+### Exercise 1
+
+
+
+
+<br>
+<br>
+
+### Exercise 2
+
+
+
+
+<br>
+<br>
+
+
+### Exercise 3
+    
+    
+    
+
+
+<br>
+<br>
+
+### Exercise 4
+
+
+
+
+
+<br>
+<br>
+
+### Exercise 5
+
+  
+
+
